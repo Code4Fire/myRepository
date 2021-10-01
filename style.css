@@ -1,0 +1,374 @@
+body  {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  header {
+    margin: 0px;
+    padding: 0px;
+    height: 300px;
+    background-image: url("https://s27389.pcdn.co/wp-content/uploads/2017/05/AdobeStock_51875542-1024x748.jpeg");
+    background-size: 100% 100%;
+  }
+  
+  #header {
+    margin:0px;
+    padding: 0px;
+    width: 100%;
+    height: 400px;
+  
+  }
+  
+  #navbar {
+    /* margin-top: 0px;   */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+  } 
+  
+  #navbar > ul {
+    margin: 0px;
+    padding-top: 270px;
+    display: flex;
+    list-style: none;
+    color: white;
+    position: fixed;
+    background-color: transparent;
+    /* border: thin solid black; */
+  }
+  
+  
+  a {
+    margin-right: 35px;
+    color: white;
+    font-family: 'Playball';
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    /* text-shadow: 2px 2px black; */
+    animation: pulsate 2.5s infinite alternate;
+    font-weight: lighter;
+    
+  }
+  
+  a::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  }
+  
+  a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+  
+  /* <!-- ABOUT PAGE --> */
+  #welcome-section {
+    text-align: center;
+    justify-content: center;
+    font-family: 'Mate SC', serif;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(black, rgb(201, 194, 194));
+  }
+  .page_title {
+    margin: 0px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Mate SC', serif;
+    font-size: 3em;
+    letter-spacing: .2em;
+    /* color: rgb(241, 6, 124); */
+  }
+  
+  .profile {
+    display:flex;
+    padding: 150px 0px 10px 300px;
+    font-size: small;
+    text-transform: lowercase;
+    /* border: solid black; */
+  }
+  
+  img {
+    width: 500px;
+    height: auto;
+    margin: 150px 50px auto 10px;
+    /* margin-right: 10px; */
+    /* padding-right: 40px; */
+    border:thin solid black;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  .resume {
+    height:200px;
+    width: 500px;
+    text-align: justify;
+    /* margin: 0px 200px auto 2px; */
+    padding: 0%;
+    /* border:solid black */
+  }
+  
+  .job1 {
+    font-size: 1.3em;
+  }
+  
+  .job_details {
+    font-size: .8em;
+  }
+  
+  /* <!-- Project Page --> */
+  #projects {
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgb(201, 194, 194), white, rgb(201, 194, 194));
+  }
+  
+  iframe {
+    height: 400px;
+    width: 20%;
+    display: inline grid;
+    /* border: dotted red; */
+  }
+  
+  
+  .project-tile {
+    display: grid;
+    padding: 50px 80px 0px 80px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px 0px;
+    justify-content: space-evenly;
+    /* border: 1px dotted blue; */
+  } 
+  .project_title {
+    /* border: solid blue; */
+    width: 800px;
+    margin: 50px 10px 20px 10px;
+    text-align: center;
+    font-family:'Mate SC', serif;
+    font-size: large;
+  }
+  
+  
+    /* <!-- END Project Page --> */
+  
+    /* <!-- Contact Page --> */
+  
+  #contact {
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgb(201, 194, 194), black);
+    /* border: solid pink; */
+  }
+  
+  h2 {
+    text-align:center;
+    /* border: solid blue; */
+    margin-top: -20px;
+  }
+  
+  /* .contact_body {
+    border: dotted pink;
+    display: flex; 
+    width: 50%;
+    height: 870px;
+    margin-top: 80px;
+    align-content: center;
+  }
+  
+  #quote {
+    color: white;
+    text-shadow: 1px 1px black;
+  }
+  
+  .survey_title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  
+  .form-control {
+    display: flex;
+    width: 100%;
+    height:40px;
+    border-radius:.75rem;
+  }
+  
+  .form-control2  {
+    height: 100px;
+    width: 100%;
+    border-radius:.75rem;
+  } */
+  
+  
+  .flex_container_body {
+    display: flex;
+    margin-top: 100px;
+    height: 65vh;
+    /* border: solid green; */
+  }
+  
+  #quote {
+    display: flex;
+    width: 50%;
+    margin:20px 60px 20px 60px;
+    /* border: solid red; */
+    /* justify-content: center; */
+    align-items: center;
+    text-align: justify;
+    font-family: 'playball';
+    font-size: xx-large;
+    line-height:2.6;
+  }
+  
+  #contact_me {
+    width: 50%;
+    line-height: 3;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 40px;
+    /* border: thin solid white; */
+  }
+  
+  .survey_title {
+    font-size: xx-large;
+  }
+  
+  .form-control {
+    width:70%;
+    height: 40px;
+    border-radius: .75rem;
+  }
+  
+  .form-control2 {
+    width:70%;
+    height: 300px;
+    border-radius: .75rem;
+    text-align: justify;
+    text-align-last:initial;
+  }
+  
+  button {
+    width: 30%;
+    height: 40px;
+    margin: 40px;
+    background-color:rgb(83, 165, 219);
+    border-radius: .75rem;
+  }
+  .contact_links {
+    text-align: center;
+    font-size: 3em;
+    padding-top: 10vh;
+    vertical-align: text-bottom;
+    color: rgb(83, 165, 219);
+  }
+  
+  
+  
+  
+  /* <!-- END Contact Page --> */
+  
+  /* <!-- footer --> */
+  #footer {
+    /* margin-top: 1000px; */
+    padding: 0px;
+    height: 300px;
+    background-image: url("https://s27389.pcdn.co/wp-content/uploads/2017/05/AdobeStock_51875542-1024x748.jpeg");
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    text-align: center;
+    color: white;
+  }
+  
+  /* .fa.fa-copyright {
+    text-align: center;
+    font-size: 3em;
+    color: white;
+  } */
+  
+  
+  
+  /* <!--FORMAT FOR EMBEDDED PORTFOLIO -->
+  <iframe id="cp_embed_RwKMWqm" src="//codepen.io/anon/embed/preview/RwKMWqm?height=450&amp;theme-id=1&amp;slug-hash=RwKMWqm&amp;default-tab=result" height="450" scrolling="no" frameborder="0" allowfullscreen="" allowpaymentrequest="" name="CodePen Embed RwKMWqm" title="CodePen Embed RwKMWqm" class="cp_embed_iframe" style="width: 100%; overflow: hidden; height: 100%;">CodePen Embed Fallback</iframe> */
+  
+  /* <!-- GLOW EFFECT FOR NAV BAR --> */
+  .neonText {
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
+  
+  /* Additional styling */
+  
+  .pulsate {
+     animation: pulsate 1.5s infinite alternate;     
+  }
+  
+  
+  @keyframes pulsate {
+    
+  100% {
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #0fa,
+      0 0 80px #0fa,
+      0 0 90px #0fa,
+      0 0 100px #0fa,
+      0 0 150px #0fa;
+  
+  }
+  
+  0% {
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 10px #0fa,
+    0 0 45px #0fa,
+    0 0 55px #0fa,
+    0 0 70px #0fa,
+    0 0 80px #0fa;
+  }
+  
+  /* @media only screen and (max-width: 600px) {
+    #projects {
+      position: absolute;
+      top: 0 0;
+      padding: 0 0;
+      margin: 0;
+      height: 60%;
+      width: 100%;
+    }
+  
+    #contact  {
+      position: relative;
+      margin-left: 20px;
+      margin-top:800px;
+    }
+  }
+   */
